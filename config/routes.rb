@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # root to: 'pages#about'
+  get 'about', to: 'pages#about'
+# verb 'url', to: 'controller#action'
 end
