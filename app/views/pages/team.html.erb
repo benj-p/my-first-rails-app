@@ -1,0 +1,25 @@
+<h1>This is our team!</h1>
+
+<!-- embedded ruby (er + tab) -->
+
+<!-- printed embedded ruby (pe + tab) -->
+
+<form action="/team" method="get">
+  <input type="text" name="team_member" placeholder="<%= params[:team_member] ? params[:team_member] : "Who are you looking for?" %>">
+  <input type="submit">
+</form>
+
+<ul>
+  <% @team_members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ul>
+
+The manager is <%= @boss_name %>.
+
+
+<!-- <a href="/about">Click here</a> to go to the about page -->
+
+
+
+

@@ -11,7 +11,11 @@
 
   <body>
     <div style="background-color: grey; padding: 20px;">
-      This is my navbar
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About us", about_path %></li>
+        <li><%= link_to "Meet the team", team_path %></li>
+      </ul>
     </div>
     <%= yield %>
   </body>
